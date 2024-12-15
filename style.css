@@ -1,0 +1,149 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* variaveis */
+:root {
+  --font1: "Poppins", serif;
+}
+/* reset */
+* {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body */
+body {
+  color: #242424;
+  font-family: var(--font1);
+
+  /* pesquisar  */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: #000;
+}
+/*  */
+.wrapper {
+  width: 100%;
+
+  margin: 0 auto;
+}
+/* main */
+main {
+  display: block;
+  background: #fff;
+}
+/* container */
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* section module */
+section.module p {
+  margin-bottom: 40px;
+}
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+section.module.content {
+  padding: 40px 0;
+  background: #ece7d5;
+}
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100dvh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.module.parallax::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 40%,
+    #000 100%
+  );
+}
+
+section.module.parallax-1 {
+  background: url(https://plus.unsplash.com/premium_photo-1706569656383-a384b5e7c2d3?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.module.parallax h1 {
+  z-index: 10;
+  color: #fff;
+  font-size: 5em;
+  /* text-transform: uppercase; */
+  font-variant: small-caps;
+}
+section.module.parallax h2 {
+  z-index: 10;
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+section.module.parallax-2 {
+  background: url(https://plus.unsplash.com/premium_photo-1706569656444-3658636f7b82?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+section.module.parallax-3 {
+  background: url(https://plus.unsplash.com/premium_photo-1710197034876-88db98042116?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  background: #000;
+
+  width: 100%;
+  padding: 1em;
+}
+footer p a {
+  font-weight: 800;
+  text-decoration: none;
+  color: #ece7d5;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
